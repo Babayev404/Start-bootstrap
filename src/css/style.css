@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/* @media (min-width: 992px) {
+    .container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: #212529;
+    }
+} */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: transparent;
+}
+.navbar .container {
+  padding: 30px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .container img {
+  height: 32px;
+}
+.navbar .container ul {
+  display: flex;
+  text-transform: uppercase;
+}
+.navbar .container ul li {
+  margin-right: 35px;
+}
+.navbar .container ul li .link {
+  font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #fff;
+  font-size: 15.2px;
+  letter-spacing: 1px;
+}
+
+.mastheader {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.mastheader .content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mastheader .content .title {
+  color: #fff;
+  font-size: 36px;
+  line-height: 36px;
+  font-style: italic;
+  margin-bottom: 32px;
+}
+.mastheader .content .heading {
+  font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 700;
+  margin-bottom: 64px;
+}
+.mastheader .content .button {
+  width: 224px;
+  height: 69px;
+  background-color: #ffc800;
+  border: 1px solid #ffc800;
+  color: #fff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#service {
+  width: 100%;
+  height: 100vh;
+  font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#service .service-container {
+  padding: 40px 0;
+  text-align: center;
+}
+#service .service-title {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+#service .service-content {
+  color: #6c757d;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 64px;
+}
+#service .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#service .row .item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#service .row .item h2 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+#service .row .item p {
+  text-align: center;
+  color: #6c757d;
+  width: 69%;
+  line-height: 1.75;
+}
+#service .row .item .icon {
+  text-align: center;
+  position: relative;
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+  background-color: rgb(255, 200, 0);
+}
+#service .row .item .icon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#portfolio {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(248, 249, 250);
+  font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#portfolio .portfolio-container {
+  padding: 40px 0;
+  text-align: center;
+}
+#portfolio .portfolio-title {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+#portfolio .portfolio-content {
+  color: #6c757d;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 64px;
+}
+#portfolio .port-row {
+  display: flex;
+}
+#portfolio .port-row .port-item img {
+  background-size: cover;
+  height: 272px;
+  width: 373px;
+}/*# sourceMappingURL=style.css.map */
