@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -18,13 +19,6 @@ body {
   height: 100vh;
 }
 
-/* @media (min-width: 992px) {
-    .container {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        background-color: #212529;
-    }
-} */
 .navbar {
   position: fixed;
   top: 0;
@@ -54,6 +48,10 @@ body {
   color: #fff;
   font-size: 15.2px;
   letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+.navbar .container ul li .link:hover {
+  color: #ffc800; /* Hover durumunda link rengini değiştir */
 }
 
 .mastheader {
@@ -103,6 +101,12 @@ body {
   font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   cursor: pointer;
+  transition: 0.5s ease;
+}
+.mastheader .content .button:hover {
+  color: #fff;
+  background-color: #d9aa00;
+  border-color: #cca000;
 }
 
 #service {
@@ -154,16 +158,14 @@ body {
   border-radius: 50%;
   background-color: rgb(255, 200, 0);
 }
-#service .row .item .icon img {
+#service .row .item .icon i {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  top: 25%;
+  font-size: 4em;
 }
 
 #portfolio {
-  height: 100vh;
+  height: 170vh;
   width: 100%;
   background-color: rgb(248, 249, 250);
   font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -185,9 +187,30 @@ body {
 }
 #portfolio .port-row {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 80px;
+}
+#portfolio .port-row .port-item {
+  margin-bottom: 30px;
 }
 #portfolio .port-row .port-item img {
   background-size: cover;
   height: 272px;
   width: 373px;
+}
+#portfolio .port-row .port-item .product-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-top: -15px;
+}
+#portfolio .port-row .port-item .product-content .content-head {
+  font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.5rem;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */

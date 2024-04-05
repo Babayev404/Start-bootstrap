@@ -1,18 +1,10 @@
-body{
+body {
     position: relative;
     width: 100%;
     height: 100vh;
 }
 
-/* @media (min-width: 992px) {
-    .container {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        background-color: #212529;
-    }
-} */
-
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     right: 0;
@@ -20,35 +12,41 @@ body{
     z-index: 1030;
     background-color: transparent;
 
-    .container{
+    .container {
         padding: 30px 90px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
-        img{
+
+        img {
             height: 32px;
         }
-        
-        ul{
+
+        ul {
             display: flex;
             text-transform: uppercase;
 
-            li{
+            li {
                 margin-right: 35px;
 
-                .link{
+                .link {
                     font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
                     color: #fff;
                     font-size: 15.2px;
                     letter-spacing: 1px;
+                    transition: color 0.3s ease;
+                }
+                
+                .link:hover {
+                    color: #ffc800; /* Hover durumunda link rengini değiştir */
                 }
             }
         }
     }
 }
 
-.mastheader{
+
+.mastheader {
     width: 100%;
     height: 100vh;
     background-image: url(../image/header-bg.jpg);
@@ -57,7 +55,7 @@ body{
     background-position: center center;
     background-size: cover;
 
-    .content{
+    .content {
         width: 100%;
         height: 100vh;
         display: flex;
@@ -65,7 +63,7 @@ body{
         justify-content: center;
         align-items: center;
 
-        .title{
+        .title {
             color: #fff;
             font-size: 36px;
             line-height: 36px;
@@ -73,7 +71,7 @@ body{
             margin-bottom: 32px;
         }
 
-        .heading{
+        .heading {
             font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             text-transform: uppercase;
             color: #fff;
@@ -83,7 +81,7 @@ body{
             margin-bottom: 64px;
         }
 
-        .button{
+        .button {
             width: 224px;
             height: 69px;
             background-color: #ffc800;
@@ -97,6 +95,13 @@ body{
             font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             font-weight: 700;
             cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        .button:hover{
+            color: #fff;
+            background-color: #d9aa00;
+            border-color: #cca000;
         }
     }
 }

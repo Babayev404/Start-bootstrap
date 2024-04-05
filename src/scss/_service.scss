@@ -52,12 +52,10 @@
                 border-radius: 50%;
                 background-color: rgb(255, 200, 0);
 
-                img {
+                i{
                     position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
+                    top: 25%;
+                    font-size: 4em;
                 }
             }
         }
