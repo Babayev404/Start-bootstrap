@@ -36,9 +36,10 @@ body {
                     letter-spacing: 1px;
                     transition: color 0.3s ease;
                 }
-                
+
                 .link:hover {
-                    color: #ffc800; /* Hover durumunda link rengini değiştir */
+                    color: #ffc800;
+                    /* Hover durumunda link rengini değiştir */
                 }
             }
         }
@@ -98,7 +99,7 @@ body {
             transition: 0.5s ease;
         }
 
-        .button:hover{
+        .button:hover {
             color: #fff;
             background-color: #d9aa00;
             border-color: #cca000;

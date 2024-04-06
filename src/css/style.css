@@ -51,7 +51,8 @@ body {
   transition: color 0.3s ease;
 }
 .navbar .container ul li .link:hover {
-  color: #ffc800; /* Hover durumunda link rengini değiştir */
+  color: #ffc800;
+  /* Hover durumunda link rengini değiştir */
 }
 
 .mastheader {
@@ -213,4 +214,80 @@ body {
   font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#about .about-container {
+  padding: 40px 0;
+  text-align: center;
+}
+#about .about-container .about-title {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+#about .about-container .about-content {
+  color: #6c757d;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 64px;
+}
+#about .timeline {
+  position: relative;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: red;
+  margin-left: -15px;
+}
+#about .timeline li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#about .timeline li .item {
+  position: relative;
+  top: -40px;
+  width: 170px;
+  height: 170px;
+  margin-left: -17px;
+  border: 7px solid #e9ecef;
+  background-color: #ffc800;
+  border-radius: 100%;
+}
+#about .timeline li .item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50% !important;
+}
+#about .timeline li .timeline-panel {
+  position: absolute;
+  top: -25px;
+  left: -32%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#about .timeline li .timeline-panel .heading {
+  width: 30%;
+  text-align: right;
+}
+#about .timeline li .timeline-panel .body {
+  width: 30%;
+  text-align: right;
+  color: red;
 }/*# sourceMappingURL=style.css.map */
